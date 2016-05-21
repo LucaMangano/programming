@@ -87,14 +87,14 @@ public class Maze : MonoBehaviour {
 
 	private void CreateWall (MazeCell cell, MazeCell otherCell, MazeDirection direction) {
 		MazeWall wall = Instantiate(wallPrefab) as MazeWall;
-		wall.name = wall.name + "_" + direction;
 		wall.Initialize(cell, otherCell, direction);
+		wall.name = wall.name + "_" + direction;
 		if (otherCell != null) {
 			wall = Instantiate(wallPrefab) as MazeWall;
 			wall.Initialize(otherCell, cell, direction.GetOpposite());
 		}
 		if (wall.name.Contains ("_") == false) {
-			wall.name = wall.name + "_" + direction;
+			wall.name = wall.name + "_" + direction.GetOpposite();
 		}
 	}
 }

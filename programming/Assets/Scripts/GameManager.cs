@@ -53,12 +53,67 @@ public class GameManager : MonoBehaviour {
 			if (i % 2 == 0) {
 				Destroy(GameObject.Find ("True_" + i).gameObject.transform.Find("Maze Cell 0, 19").gameObject.transform.Find ("Maze Wall(Clone)_West").gameObject);
 				Destroy(GameObject.Find ("True_" + i).gameObject.transform.Find("Maze Cell 1, 0").gameObject.transform.Find ("Maze Wall(Clone)_East").gameObject);
+				for (int k = 0; k < 2; k++) {
+					for (int j = 0; j < 20; j++) {
+						if (k == 0) {
+							if(GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_East") != null){
+								Destroy (GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_East").gameObject);
+							}
+						} else {
+							if (GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_West") != null) {
+								Destroy (GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_West").gameObject);
+							}
+						}
+
+						if (j != 0 && j != 19) {
+							if(GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South") != null){
+								Destroy (GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South").gameObject);
+							}
+							if(GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North") != null){
+								Destroy (GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North").gameObject);
+							}
+						}
+					}
+				}
 			} else {
 				Destroy(GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell 1, 19").gameObject.transform.Find ("Maze Wall(Clone)_East").gameObject);
 				Destroy(GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell 0, 0").gameObject.transform.Find ("Maze Wall(Clone)_West").gameObject);
+				for (int k = 0; k < 2; k++) {
+					for (int j = 0; j < 20; j++) {
+						if (k == 0) {
+							if(GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_East") != null){
+								Destroy (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_East").gameObject);
+							}
+						} else {
+							if (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_West") != null) {
+								Destroy (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_West").gameObject);
+							}
+						}
+
+						if (j != 0 && j != 19) {
+							if (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South") != null) {
+								Destroy (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South").gameObject);
+							}
+							if (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North") != null) {
+								Destroy (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North").gameObject);
+							}
+						} else if (j == 0) {
+							if (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North") != null) {
+								Destroy (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North").gameObject);
+							}
+						} else if (j == 19) {
+							if (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South") != null) {
+								Destroy (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South").gameObject);
+							}
+						}
+					}
+				}
 			}
 
 
+
+
 		}
+			
 	}
 }
