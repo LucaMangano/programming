@@ -1,0 +1,17 @@
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/lucamangano/programming/programming/obj/Debug/Assembly-CSharp.dll
+/Users/lucamangano/programming/programming/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/lucamangano/programming/programming/Temp/bin/Debug/UnityEngine.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/UnityEditor.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Mono.Cecil.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Unity.DataContract.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/lucamangano/programming/programming/Temp/bin/Debug/Mono.Cecil.Mdb.dll
