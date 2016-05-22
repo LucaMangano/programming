@@ -45,10 +45,47 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Bad.cs" />
+     <Compile Include="Assets\LeapC\Arm.cs" />
+     <Compile Include="Assets\LeapC\Bone.cs" />
+     <Compile Include="Assets\LeapC\CSharpExtensions.cs" />
+     <Compile Include="Assets\LeapC\CircularObjectBuffer.cs" />
+     <Compile Include="Assets\LeapC\ClockCorrelator.cs" />
+     <Compile Include="Assets\LeapC\Config.cs" />
+     <Compile Include="Assets\LeapC\Connection.cs" />
+     <Compile Include="Assets\LeapC\Controller.cs" />
+     <Compile Include="Assets\LeapC\Device.cs" />
+     <Compile Include="Assets\LeapC\DeviceList.cs" />
+     <Compile Include="Assets\LeapC\DistortionData.cs" />
+     <Compile Include="Assets\LeapC\DistortionDictionary.cs" />
+     <Compile Include="Assets\LeapC\Events.cs" />
+     <Compile Include="Assets\LeapC\FailedDevice.cs" />
+     <Compile Include="Assets\LeapC\FailedDeviceList.cs" />
+     <Compile Include="Assets\LeapC\Finger.cs" />
+     <Compile Include="Assets\LeapC\Frame.cs" />
+     <Compile Include="Assets\LeapC\Hand.cs" />
+     <Compile Include="Assets\LeapC\IController.cs" />
+     <Compile Include="Assets\LeapC\Image.cs" />
+     <Compile Include="Assets\LeapC\ImageData.cs" />
+     <Compile Include="Assets\LeapC\ImageFuture.cs" />
+     <Compile Include="Assets\LeapC\InteractionBox.cs" />
+     <Compile Include="Assets\LeapC\LeapC.cs" />
+     <Compile Include="Assets\LeapC\Logger.cs" />
+     <Compile Include="Assets\LeapC\Matrix.cs" />
+     <Compile Include="Assets\LeapC\MessageSeverity.cs" />
+     <Compile Include="Assets\LeapC\ObjectPool.cs" />
+     <Compile Include="Assets\LeapC\PendingImages.cs" />
+     <Compile Include="Assets\LeapC\PooledObject.cs" />
+     <Compile Include="Assets\LeapC\ServiceFrameFactory.cs" />
+     <Compile Include="Assets\LeapC\StructMarshal.cs" />
+     <Compile Include="Assets\LeapC\TimeBracket.cs" />
+     <Compile Include="Assets\LeapC\TrackedQuad.cs" />
+     <Compile Include="Assets\LeapC\Vector.cs" />
+     <Compile Include="Assets\Scripts\3D UI\dragDrop.cs" />
+     <Compile Include="Assets\Scripts\3D UI\explorerManager.cs" />
+     <Compile Include="Assets\Scripts\3D UI\shelfController.cs" />
+     <Compile Include="Assets\Scripts\3D UI\shelfSize.cs" />
      <Compile Include="Assets\Scripts\CartController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Good.cs" />
      <Compile Include="Assets\Scripts\IntVector2.cs" />
      <Compile Include="Assets\Scripts\Maze.cs" />
      <Compile Include="Assets\Scripts\MazeCell.cs" />
@@ -56,6 +93,7 @@
      <Compile Include="Assets\Scripts\MazeDirection.cs" />
      <Compile Include="Assets\Scripts\MazePassage.cs" />
      <Compile Include="Assets\Scripts\MazeWall.cs" />
+     <Compile Include="Assets\Scripts\Save\GameControl.cs" />
      <Compile Include="Assets\Scripts\pickUp.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
      <None Include="Assets\Standard Assets\Characters\ThirdPersonCharacter\ThirdPersonCharacterGuidelines.txt" />

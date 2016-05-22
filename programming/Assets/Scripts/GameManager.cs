@@ -23,6 +23,8 @@ public class GameManager : MonoBehaviour {
 		count = 1;
 		offset = 0;
 		rows = 3;
+		GameObject contr = GameObject.Find ("GameController1");
+		print (contr.GetComponent<GameControl>().prot);
 	}
 
 	private void Update () {
