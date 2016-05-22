@@ -7,6 +7,13 @@ public class GameManager : MonoBehaviour {
 
 	private Maze mazeInstance;
 
+	public GameObject good1;
+	public GameObject bad1;
+	public GameObject good2;
+	public GameObject bad2;
+	public GameObject good3;
+	public GameObject bad3;
+
 	public int rows;
 	private int offset;
 	private bool even;
@@ -67,10 +74,38 @@ public class GameManager : MonoBehaviour {
 
 						if (j != 0 && j != 19) {
 							if(GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South") != null){
-								Destroy (GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South").gameObject);
+								GameObject obj = GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South").gameObject;
+								GameObject toInstantiate;
+								int rand = Random.Range (1, 4);
+								if (rand == 1) {
+									toInstantiate = bad1;
+								} else if (rand == 2) {
+									toInstantiate = bad2;
+								} else if (rand == 3) {
+									toInstantiate = bad3;
+								} else {
+									toInstantiate = bad3;
+								}
+								GameObject instance = Instantiate (toInstantiate);
+								instance.transform.position = obj.transform.position;
+								Destroy (obj);
 							}
 							if(GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North") != null){
-								Destroy (GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North").gameObject);
+								GameObject obj = GameObject.Find ("True_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North").gameObject;
+								GameObject toInstantiate;
+								int rand = Random.Range (1, 4);
+								if (rand == 1) {
+									toInstantiate = good1;
+								} else if (rand == 2) {
+									toInstantiate = good2;
+								} else if (rand == 3) {
+									toInstantiate = good3;
+								} else {
+									toInstantiate = good3;
+								}
+								GameObject instance = Instantiate (toInstantiate);
+								instance.transform.position = obj.transform.position;
+								Destroy (obj);
 							}
 						}
 					}
@@ -92,10 +127,38 @@ public class GameManager : MonoBehaviour {
 
 						if (j != 0 && j != 19) {
 							if (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South") != null) {
-								Destroy (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South").gameObject);
+								GameObject obj = GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_South").gameObject;
+								GameObject toInstantiate;
+								int rand = Random.Range (1, 4);
+								if (rand == 1) {
+									toInstantiate = bad1;
+								} else if (rand == 2) {
+									toInstantiate = bad2;
+								} else if (rand == 3) {
+									toInstantiate = bad3;
+								} else {
+									toInstantiate = bad3;
+								}
+								GameObject instance = Instantiate (toInstantiate);
+								instance.transform.position = obj.transform.position;
+								Destroy (obj);
 							}
 							if (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North") != null) {
-								Destroy (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North").gameObject);
+								GameObject obj = GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North").gameObject;
+								GameObject toInstantiate;
+								int rand = Random.Range (1, 4);
+								if (rand == 1) {
+									toInstantiate = good1;
+								} else if (rand == 2) {
+									toInstantiate = good2;
+								} else if (rand == 3) {
+									toInstantiate = good3;
+								} else {
+									toInstantiate = good3;
+								}
+								GameObject instance = Instantiate (toInstantiate);
+								instance.transform.position = obj.transform.position;
+								Destroy (obj);
 							}
 						} else if (j == 0) {
 							if (GameObject.Find ("False_" + i).gameObject.transform.Find ("Maze Cell " + k + ", " + j).gameObject.transform.Find ("Maze Wall(Clone)_North") != null) {
