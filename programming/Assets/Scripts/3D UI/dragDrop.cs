@@ -22,9 +22,9 @@ public class dragDrop : MonoBehaviour {
 	float shelf4y;
 	float shelf5y;
 
-	public int carb;
-	public int fat;
-	public int prot;
+	public float carb;
+	public float fat;
+	public float prot;
 
 	private int count;
 
@@ -37,6 +37,9 @@ public class dragDrop : MonoBehaviour {
 		if (gameObject.name.Contains("drag")) {
 			Destroy (gameObject);
 			gameControl.GetComponent<GameControl> ().count -= 1;
+			gameControl.GetComponent<GameControl> ().RemoveCarb (carb);
+			gameControl.GetComponent<GameControl> ().RemoveFat (fat);
+			gameControl.GetComponent<GameControl> ().RemoveProt (prot);
 			GameObject.Find ("Errors").GetComponent<Text> ().text = "Select "+ (5 - gameControl.GetComponent<GameControl> ().count) +" more object(s)";
 		} else {
 			if (gameControl.GetComponent<GameControl>().count < 5) {

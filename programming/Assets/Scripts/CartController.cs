@@ -17,6 +17,10 @@ public class CartController : MonoBehaviour
 
 	public float RotationSpeed = 20.0f;
 
+	public float carbs;
+	public float prot;
+	public float fat;
+
 
 	void Start()
 	{

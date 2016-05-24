@@ -23,12 +23,33 @@ public class GameManager : MonoBehaviour {
 		count = 1;
 		offset = 0;
 		rows = 3;
-		GameObject contr = GameObject.Find ("GameController1");
-		print (contr.GetComponent<GameControl>().prot);
+		try{
+			GameControl contr = GameObject.Find ("GameController1").GetComponent<GameControl>();
+			CartController cc = GameObject.Find ("Player").GetComponent<CartController> ();
+			cc.carbs = contr.carbs;
+			cc.fat = contr.fat;
+			cc.prot = contr.prot;
+			Destroy(contr);
+		} catch {
+		}
+
+		BeginGame ();
+		even = true;
+		offset += 2;
+		count += 1;
+		BeginGame ();
+		even = false;
+		offset += 2;
+		count += 1;
+		BeginGame ();
+		even = true;
+		offset += 2;
+		count += 1;
+
 	}
 
 	private void Update () {
-		if (Input.GetKeyDown (KeyCode.Return)) {
+		/*if (Input.GetKeyDown (KeyCode.Return)) {
 			if (count % 2 == 0) {
 				even = true;
 			} else {
@@ -38,8 +59,12 @@ public class GameManager : MonoBehaviour {
 			BeginGame ();
 			offset += 2;
 			count += 1;
-		} else if (Input.GetKeyDown (KeyCode.P)) {
+		} else 
+		if (Input.GetKeyDown (KeyCode.P)) {
 			ClearPassages ();
+		}*/
+		if (GameObject.Find ("Player").transform.position.x >= 5.3f) {
+			Application.LoadLevel ("Finish");
 		}
 	}
 
@@ -56,9 +81,9 @@ public class GameManager : MonoBehaviour {
 		BeginGame();
 	}
 
-	private void ClearPassages(){
+	public void ClearPassages(){
+		Destroy (GameObject.Find ("Button"));
 		for (int i = 1; i < count; i++) {
-			string name;
 			if (i % 2 == 0) {
 				Destroy(GameObject.Find ("True_" + i).gameObject.transform.Find("Maze Cell 0, 19").gameObject.transform.Find ("Maze Wall(Clone)_West").gameObject);
 				Destroy(GameObject.Find ("True_" + i).gameObject.transform.Find("Maze Cell 1, 0").gameObject.transform.Find ("Maze Wall(Clone)_East").gameObject);

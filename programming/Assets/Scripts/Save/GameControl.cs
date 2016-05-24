@@ -40,5 +40,17 @@ public class GameControl : MonoBehaviour {
 		fat += value;
 	}
 
+	public void RemoveCarb(float value){
+		carbs -= value;
+	}
+
+	public void RemoveProt(float value){
+		prot -= value;
+	}
+
+	public void RemoveFat(float value){
+		fat -= value;
+	}
+
 
 }
