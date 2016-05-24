@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class GameControl : MonoBehaviour {
 
@@ -11,11 +12,14 @@ public class GameControl : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		DontDestroyOnLoad (gameObject);
+		count = 0;
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		GameObject.Find ("ProtSlider").GetComponent<Slider> ().value = prot;
+		GameObject.Find ("CarbsSlider").GetComponent<Slider> ().value = carbs;
+		GameObject.Find ("FatSlider").GetComponent<Slider> ().value = fat;
 	}
 
 	public void LoadExplorer(){
@@ -25,6 +29,7 @@ public class GameControl : MonoBehaviour {
 
 	public void AddToProt(float value){
 		prot += value;
+
 	}
 
 	public void AddToCarb(float value){
