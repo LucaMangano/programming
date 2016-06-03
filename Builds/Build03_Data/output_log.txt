@@ -1,0 +1,75 @@
+Initialize engine version: 5.3.3f1 (910d71450a97)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 570 (ID=0x1086)
+    Vendor:   NVIDIA
+    VRAM:     1233 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\Photon3Unity3D.dll (this message is harmless)
+Loading E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\Photon3Unity3D.dll into Unity Child Domain
+- Completed reload, in  0.039 seconds
+Platform assembly: E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: E:\Files\UnityProjects\programming\Builds\Build03_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 3200x1080 at -1280,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 0.593652 ms
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/PhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/.\PhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/PhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/libPhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/.\libPhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/libPhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/PhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/.\PhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/PhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/libPhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/.\libPhotonCryptoPlugin
+Fallback handler could not load library E:/Files/UnityProjects/programming/Builds/Build03_Data/Mono/libPhotonCryptoPlugin
+In on joined lobby
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Operation failed: OperationResponse 225: ReturnCode: 32760 (No match found). Parameters: {}
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Can't join random Room!
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Connect to room
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+number of   collected: 0
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+number of   collected: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+number of   collected: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+number of   collected: 1
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 37)
+
+Setting up 2 worker threads for Enlighten.
+  Thread -> id: 994 -> priority: 1 
+  Thread -> id: 2618 -> priority: 1 
