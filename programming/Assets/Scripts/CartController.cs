@@ -29,7 +29,7 @@ public class CartController : MonoBehaviour
 	void Update()
 	{
 		var pos = transform.localPosition;
-		pos.y = 0.58f;
+		//pos.y = 0.58f;
 		transform.localPosition = pos;
 		transform.localRotation = Quaternion.Euler(0.0f, transform.localRotation.eulerAngles.y, 0.0f);
 

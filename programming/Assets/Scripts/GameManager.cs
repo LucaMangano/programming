@@ -14,12 +14,17 @@ public class GameManager : MonoBehaviour {
 	public GameObject good3;
 	public GameObject bad3;
 
+	public int goodC;
+	public int badC;
+
 	public int rows;
 	private int offset;
 	private bool even;
 	private int count;
 
 	private void Start () {
+		goodC = 0;
+		badC = 0;
 		count = 1;
 		offset = 0;
 		rows = 3;
