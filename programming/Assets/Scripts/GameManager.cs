@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour {
 
 	private Maze mazeInstance;
 
+	//private GameObject player;
 	public GameObject good1;
 	public GameObject bad1;
 	public GameObject good2;
@@ -68,7 +69,8 @@ public class GameManager : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.P)) {
 			ClearPassages ();
 		}*/
-		if (GameObject.Find ("Player").transform.position.x >= 5.3f) {
+		if(GameObject.FindGameObjectWithTag("Player").transform.position.x >= 5.3f) {
+		//if (GameObject.Find ("Player").transform.position.x >= 5.3f) {
 			Application.LoadLevel ("Finish");
 		}
 	}
