@@ -30,8 +30,8 @@ public class GameManager : MonoBehaviour {
 		offset = 0;
 		rows = 3;
 		try{
-			GameControl contr = GameObject.Find ("GameController1").GetComponent<GameControl>();
-			CartController cc = GameObject.Find ("Player").GetComponent<CartController> ();
+			GameControl contr = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameControl>();
+			CartController cc = GameObject.FindGameObjectWithTag("Player").GetComponent<CartController> ();
 			cc.carbs = contr.carbs;
 			cc.fat = contr.fat;
 			cc.prot = contr.prot;
@@ -69,10 +69,10 @@ public class GameManager : MonoBehaviour {
 		if (Input.GetKeyDown (KeyCode.P)) {
 			ClearPassages ();
 		}*/
-		if(GameObject.FindGameObjectWithTag("Player").transform.position.x >= 5.3f) {
+	//	if(GameObject.FindGameObjectWithTag("Player").transform.position.x >= 5.3f) {
 		//if (GameObject.Find ("Player").transform.position.x >= 5.3f) {
-			Application.LoadLevel ("Finish");
-		}
+	//		Application.LoadLevel ("Finish");
+	//	}
 	}
 
 	private void BeginGame () {

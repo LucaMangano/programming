@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using Photon;
 
-public class CartController : MonoBehaviour
+public class CartController : Photon.MonoBehaviour
 {
 	public AnimationCurve RotationSpeedCurve;
 	public Rigidbody RigidB;
@@ -28,6 +29,9 @@ public class CartController : MonoBehaviour
 	}
 	void Update()
 	{
+		PhotonView pv = PhotonView.Get(this);
+
+		if(pv.isMine){
 		var pos = transform.localPosition;
 		//pos.y = 0.58f;
 		transform.localPosition = pos;
@@ -42,6 +46,7 @@ public class CartController : MonoBehaviour
 
 		RigidB.velocity = transform.localRotation * Vector3.forward * _movementSpeed;
 		RigidB.angularVelocity = Vector3.zero;
+		}
 	}
 
 }
